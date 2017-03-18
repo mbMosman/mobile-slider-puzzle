@@ -11,23 +11,8 @@ namespace SliderPuzzleApp
     {
         public App()
         {
-            // The root page of your application
-            var content = new ContentPage
-            {
-                Title = "SliderPuzzleApp",
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
-
-            MainPage = new NavigationPage(content);
+            // The root page of the application
+            MainPage = new SliderPuzzlePage();
         }
 
         protected override void OnStart()
